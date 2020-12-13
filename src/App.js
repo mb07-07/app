@@ -17,6 +17,7 @@ class App extends React.Component {
                 <Link className="nav" to="/landingpage">home</Link>
                 <Link className="nav" to="/projects">Projects</Link>
                 <Link  className="nav"to="/contact">Contact</Link>
+                <Link  className="nav"to="/aboutme">aboutme</Link>
             </Navigation>
         </Header>
         <Drawer className="drawer-color" >
