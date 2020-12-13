@@ -104,7 +104,6 @@ class Projects extends Component{
             <Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({activeTab:tabId})} riple>
                 <Tab>HTML/CSS/Javascript</Tab>
                 <Tab>react</Tab>
-                <Tab>Mechanical</Tab>
             </Tabs>
             <Grid>
                 <Cell col={12}>
