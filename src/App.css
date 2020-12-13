@@ -1,38 +1,228 @@
-.App {
+.header-color{
+  background: #8A2387;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #F27121, #E94057, #8A2387);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #F27121, #E94057, #8A2387); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+font-family: 'Raleway', sans-serif;
+}
+.nav{
   text-align: center;
+  padding: 10px 30px;
+  padding-top: 5px;
+  border-radius: 50px;
+  text-align: ;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav{
+background-color: #17375b;
+display: grid;
+transition: transform .3s;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.nav:hover{
+  background-color: #4475e2;
+ cursor: pointer;
+ transform: translateY(5px);
   }
+
+
+.landing-grid{
+background-image: url('https://images.unsplash.com/photo-1605379399582-21f603abaed5?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTAwfHxwcm9ncmFtbWluZ3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');
+background-repeat: no-repeat;
+object-fit: contain;
+width: 100%; 
+display: flex;
+top: 0;
+left: 0;
+text-align: center;
+height: 100vh;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: fixed;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.avatar-img{
+  height: 200px;
+  width: 200px;
+  padding-top: 0.2em;
+  padding-left: 40em;
+  
+}
+
+.banner-text{
+  background-color: black;
+  opacity: 0.8;
+  width: 70%;
+  height: 50%;
+  margin: auto;
+  border-radius: 100px;
+  margin-bottom: 20em;
+  margin-top:0.5em;
+}
+.banner-text h1{
+  font-size: 50px;
+  font-weight: bold;
+  color: azure;
+  margin: auto;
+  font-family: 'Raleway', sans-serif;
+  
+}
+.banner-text hr{  
+  border-top: 5px dotted whitesmoke;
+  width: 70%;
+  margin: auto;
+}
+.banner-text p{
+  color: azure;
+  font-size: 23px;
+  padding: 2em;
+  font-family: 'Raleway', sans-serif;
+  
+}
+.social-links{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-between;
+  width: 50%;
+  margin: auto;
+  margin-bottom: 1em;
+}
+.social-links i{
+  color: azure;
+  font-size: 5em;
+  padding: 8px;
+}
+.project-grid{
+  display: flex;
+  padding-top: 5em;
+ 
+}
+
+
+.main{
+  background: #C6FFDD;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #f7797d, #FBD786, #C6FFDD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  min-height: 100%;
+  width: 100%;
+}
+.contact-body{
+  margin: auto;
+  background-color:grey;
+  position: fixed;
+  width: 100%;
+  min-height: 100%;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding-top: 5em;
+}
+.contact-grid{
+  text-align: center;
+  justify-content: center;
+  width: 80%;
+  max-height: 80%;
+  background: #FFEFBA;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border-radius: 10%;
+  margin-bottom:2em;
+  margin-top: 20%;
+  overflow: hidden;
+  
+
+}
+.logo-img{
+  float: left;
+  width: 60%;
+  margin-top: 2px;
+}
+
+.contact-grid h2{
+  font-family: 'Amatic SC', cursive;
+
+}
+
+
+.contact-grid hr{
+  border-top: 5px dotted black;
+  width: 50%;
+  margin:auto ;
+}
+.contact-links{
+  display: flex;
+  color: black;
+  justify-content: space-between;
+  width: 50%;
+  margin: auto;
+  margin-top: 10%;
+}
+.phone{
+  color: black;
+  font-size: 2em;
+  padding-top: 2em;
+}
+.mail{
+  font-size: 2em;
+  margin-top: 2em;
+}
+.contact-links a{
+  color: black;
+  font-size: 2em;
+  padding: 5px;
+}
+.banner{
+  background-color: burlywood;
+  opacity: 0.8;
+  width: 100%;
+  height: 200px;
+  margin: auto;
+  border-radius: 10px;
+  margin-bottom: 10em;
+  margin-top:1em;
+  font-size: 10px;
+  
+}
+.banner p{
+  font-family: 'Amatic SC', cursive;
+  font-size: 2em;
+  margin:auto;
+  padding-top: 1em;
+  
+}
+.resume-right-col{
+  background-color: darkslategrey ;
   color: white;
+  padding: 2em;
 }
 
-.App-link {
-  color: #61dafb;
+@media(min-width:300px) and (max-width:1199px){
+  .avatar-img{
+    width: 20%;
+    padding: 0 200px;
+    height: 20%;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media(min-width:300px) and (max-width:1000px){
+  .project-grid{
+    width: 100%;
+    padding: 10px 10px;
+    display: block;
+    margin: auto;
+    border: black;
+    
   }
-  to {
-    transform: rotate(360deg);
+}
+@media(min-width:300px) and (max-width:840px){
+  .nn{
+    width: 100%;
+    padding: 0 px;
+    display: none;
+    margin-top: 2px;
+    min-height: 100%;
+    
+    
   }
+}
+.img-avatar{
+  height: 25%;
+  width: 25%;
 }
